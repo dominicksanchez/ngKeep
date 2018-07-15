@@ -1,0 +1,458 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+* {
+    font-size: 14px;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    line-height: 1.4;
+}
+
+.clearFix {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #e8e8e8;
+}
+
+#toast-container {
+    font-family: roboto;
+    font-size: 13px;
+}
+
+#toast-container .toast-title {
+    font-size: 16px;
+}
+
+.mat-toolbar-row {
+    height: 56px !important;
+    width: 960px !important;
+    margin: 0 auto !important;
+    position: relative;
+}
+
+.mainContent {
+    padding-top: 90px;
+}
+
+.mat-toolbar {
+    min-height: 56px !important;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    background: #3f51b5;
+    color: rgba(255,255,255,.87);
+    position: fixed;
+    z-index: 999;
+}
+
+.mat-toolbar h1 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.mat-toolbar h1 a {
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: none;
+}
+
+.mat-toolbar h1 span {
+    position: relative;
+    top: -4px;
+    left: 5px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.mainNav ul {
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.mainNav li {
+    float: left;
+    list-style: none;
+}
+
+.rightNav ul {
+    overflow: hidden;
+}
+
+.rightNav li {
+    float: left;
+    list-style: none;
+}
+
+.rightNav {
+    position: absolute;
+    right: 0;  
+}
+
+.rightNav button {
+    min-width: inherit;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0 15px;
+}
+
+
+.rightNav button .mat-button {
+    line-height: inherit;
+    padding: 0;
+}
+
+.rightNav img {
+    border-radius: 50%;
+}
+
+.mainNav li.active button,
+.mainNav li:hover button {
+    background-color: rgba(0,0,0,.12) !important;
+}
+
+
+.wrapInner {
+    width: 960px !important;
+    margin: 0 auto !important;
+}
+
+.col1 {
+    width: 45%;
+    float: left;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-left: 6px;
+}
+
+
+.col2 {
+    margin-left: 30px;
+    width: 45%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.col1 .box,
+.col2 .box {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+.col1 .box:hover,
+.col2 .box:hover {
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px rgba(0,0,0,0.30);
+}
+
+.col1 .box .content,
+.col2 .box .content {
+    padding: 30px 15px 15px;
+    line-height: 1.4;
+}
+
+.col1 p,
+.col2 p {
+    color: #666;
+}
+
+.mat-figure {
+    justify-content: left !important;
+}
+
+.fileUpload {
+    display: none;
+}
+
+.btnUpload i {
+    color: #666;
+}
+
+.col1 .options button,
+.col2 .options button {
+    padding: 0;
+    margin: 0;
+    min-width: inherit;
+}
+
+.col1 .options,
+.col2 .options {
+    padding: 15px 15px 5px 15px;
+}
+
+.col1 .options button,
+.col2 .options button {
+    color: #666;
+}
+
+.col1 .options .btnDelete,
+.col2 .options .btnDelete {
+    margin-left: 10px;
+}
+
+.btnPin {
+    position: absolute !important;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    min-width: inherit !important;
+    line-height: 45px !important;
+}
+
+.btnPin i {
+    color: #666;
+    font-size: 24px;
+}
+
+.col2 .pinned {
+    margin-top: 0;
+}
+
+.mat-dialog-container {
+    padding: 0 !important;
+}
+
+.formField {
+    margin-bottom: 0 !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+.formField:hover {
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px rgba(0,0,0,0.30);
+}
+
+button {
+    border-radius: 0 !important;
+}
+
+.mainToolbar {
+    top: 0;
+}
+
+.mainContent .box {
+    margin-bottom: 20px;
+}
+
+.mainContent .box h3 {
+    margin: 0;
+    padding: 15px 15px 0;
+    color: #666;
+    font-size: 18px;
+}
+
+.col1 .box .content, .col2 .box .content {
+    padding: 0px 15px 15px;
+}
+
+.datePicker input,
+.datePicker .mat-datepicker,
+.datePicker .mat-form-field-infix,
+.datePicker .mat-form-field-underline.mat-disabled {
+    visibility: hidden;
+}
+
+.timeWrap {
+    display: inline-block;
+    width: 250px;
+}
+
+.timeWrap .date {
+    width: 33%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    margin-left: 5px;
+}
+
+.timeWrap .time {
+    width: 64px !important; 
+    margin-left: 5px;
+}
+
+.timeWrap .selectTimeAMPM {
+    width: 50px !important;
+    margin-left: 5px;
+}
+
+.noteDate {
+    position: absolute;
+    font-size: 12px;
+    right: 15px;
+    bottom: 0;
+}
+
+.checkboxWrap {
+    display: inline-block;
+}
+
+.datePicker {
+    width: 30px !important;
+    display: inline-block;
+}
+
+.datePicker .mat-form-field-suffix .mat-icon-button .mat-icon {
+    font-size: 26px;
+}
+
+.imageWrap img {
+    width: 100%;
+}
+
+.imageWrap, .fileWrap {
+    padding: 0 15px;
+}
+
+.fileWrap a {
+    height: 32px;
+    line-height: 32px;
+}
+
+.fileWrap a span {
+    font-size: 12px !important;
+}
+
+.fileWrap a i {
+    font-size: 18px !important;
+    position: relative;
+    top: -2px;
+    right: 3px;
+}
+
+.formField .btnUpload {
+    min-width: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.formField {
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.formField p {
+    margin: 0;
+    font-size: 17px;
+    color: #666;
+    padding: 15px;
+}
+
+.formField .mat-form-field {
+    width: 100%;
+}
+
+.formField form {
+    padding: 15px;
+}
+
+.formField * {
+    color: #666;    
+}
+
+.formField .btnSave {
+    float: right;
+    margin: 0;
+    padding: 0;
+    background: #3f51b5;
+    color: #fff;
+    min-width: 80px;
+    line-height: 32px;
+    border-radius: 0;
+}
+
+.formField .checkboxWrap {
+    margin-bottom: 15px;
+}
+
+.formField .btnSave span {
+    color: #fff;
+}
+
+.profilePhoto {
+    width: 32px;
+    height: 32px;
+}
+
+@media only screen and (max-width : 767px) {
+    .wrapInner {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .col1,
+    .col2 {
+        width: calc(100% - 30px);
+        float: none;
+        margin: 0 15px;
+    }
+
+    .mainNav {
+        display: none;
+    }
+
+    .mainContent {
+        padding-top: 0;
+    }
+
+    .mainH2 {
+        background: #3f51b5;
+        padding: 66px 15px 12px;
+        margin: 0;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.87);
+    }
+
+    .formField {
+        margin-top: 30px;
+        overflow: hidden;
+    }
+
+    .formField .btnSave {
+        display: block;
+        float: left;
+        width: 100%;
+        margin: 15px 0 !important;
+    }
+
+    .formField .btnUpload {
+        display: block;
+    }
+
+    .rightNav {
+        position: static;
+    }
+
+    .mat-toolbar h1 span {
+        font-size: 16px;
+    }
+
+    .rightNav button {
+        margin: 0 12px;
+    }
+
+    .mat-toolbar {
+        padding: 0 0 0 16px !important;
+    }
+
+    .mat-toolbar .mat-toolbar-row {
+        display: block !important;
+        width: 100% !important;
+        overflow: hidden;
+    }
+
+    .mat-toolbar h1 {
+        float: left;
+        margin-top: 14px;
+    }
+    
+    .rightNav ul {
+        margin-top: 8px;
+    }
+    
+    .rightNav {
+        float: right;
+    }
+
+    .col2 {
+        margin-bottom: 30px;
+    }
+}
